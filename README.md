@@ -10,7 +10,7 @@ Input data format is defined as AWS::IAM::Role Policy - definition and example [
 
 This library has minimal dependencies to ensure there are no dependency conflicts when using it.
 
-##### Required Dependencies
+#### Required Dependencies
 
 The following are the dependencies that will automatically be included when this library is included.
 
@@ -19,19 +19,19 @@ The following are the dependencies that will automatically be included when this
     <groupId>org.projectlombok</groupId>
     <artifactId>lombok</artifactId>
     <version>1.18.32</version>
-</dependency>
+ </dependency>
 
-<dependency>
-<groupId>com.google.code.gson</groupId>
-<artifactId>gson</artifactId>
-<version>2.9.1</version>
-</dependency>
+ <dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.9.1</version>
+ </dependency>
 
-<dependency>
-<groupId>org.junit.jupiter</groupId>
-<artifactId>junit-jupiter</artifactId>
-<scope>test</scope>
-</dependency>
+ <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter</artifactId>
+    <scope>test</scope>
+ </dependency>
 ```
 ##### Prerequisite
 
@@ -46,7 +46,6 @@ The following example demonstrates how inputs are validated. It comprises the fo
 * Create a file for reading using the file path.
 * Use checkIfFileAvailable(File file) method of the Verifier to check if document exists.
 * Read the data from the JSON document using BufferedReader.
-* Creating a configuration for controlling validator behavior.
 * Use isResourceValid(String filePath) method of the Verifier to validate the JSON document.
 
 ## Results and output formats
